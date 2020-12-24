@@ -1,0 +1,50 @@
+ {% block content %}
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Register</title>
+</head>
+<style>
+body
+{
+  background-image: url("{% static 'images/pic.jpg' %}");
+   background-attachment: fixed;
+  background-size: 100% 100%;
+  h1
+    font-family: Eve;
+    color: red;
+    font-size:15pt;
+    text-align:center;
+
+}
+</style>
+<center><form>
+	<lable> Enter the Name</lable><br>
+	<input type="text" name="username"><br>
+	<lable> Enter the Password</lable><br>
+	<input type="password" name="password"><br>
+	<lable> Date of Birth</lable><br>
+	<input type="date" name="dob"><br>
+	<lable> Time of Birth</lable><br>
+	<input type="time" name="tob"><br>
+	<lable> Enter the E-mail</lable><br>
+	<input type="email" name="email"><br>
+	Male<input type="radio" name="gender">
+	Female<input type="radio" name="gender"><br>
+	
+	<lable>COURSES</lable><br>
+	<input type="checkbox" value="python" name="course">python<br>
+	<input type="checkbox"  value="c" name="course">c<br>
+	<input type="checkbox" value=" java" name="course">java<br>
+
+
+	<input type="submit" value="Register me">
+</form>
+
+	<a href="http://127.0.0.1:8000/">
+	<br>HOME PAGE</br></a>
+<center/>
+</body>
+</html>
+{% endblock content %}

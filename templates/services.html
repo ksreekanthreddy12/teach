@@ -1,0 +1,48 @@
+ {% block content %}
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>services</title>
+</head>
+<style>
+body
+{
+  background-image: url("{% static 'images/pic.jpg' %}");
+   background-attachment: fixed;
+  background-size: 100% 100%;
+  h1
+    font-family: Eve;
+    color: red;
+    font-size:15pt;
+    text-align:center;
+
+}
+</style>
+<center>	<table boder="600" width="600">
+	<tr>
+		<th> SL.NO</th>
+		<th>PRODUCT</th>
+		<th>PRICE</th>
+	</tr>
+		<td> 1. </td>
+		<td> python languages</td>
+		<td> 5,000/- </td>
+	</tr>
+		<td> 2. </td>
+		<td> c language  </td>
+		<td> 7,000/-</td>
+	</tr>
+		<td> 3. </td>
+		<td> java language</td>
+		<td> 10,000/- </td>
+
+	<a href="contact">
+	<br>Contact us</br></a>
+	<a href="register">
+	<br>Register Here</br></a>
+	<a href="http://127.0.0.1:8000/">
+	<br> Home page</br></a>
+</center></body>
+</html>
+{% endblock content %}
